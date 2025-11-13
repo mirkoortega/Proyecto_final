@@ -1,1 +1,50 @@
 /*VARIABLES*/
+:root{
+    --color_1:#090085; /* cambiar colores*/
+    --color_2:#7EA5FF;
+    --color_3:#E5FA6E;
+    --color_4:#FFFFEF;
+    --color_5:#EBEDEC;
+
+    --padding-1:px;
+    --padding-2:px; 
+    --padding_6:px;   
+    --padding_3:px;
+    --padding_4:px;   
+    --padding_5:px;     
+    --gap-1:px;
+
+    /*Escala tipografica*/
+
+    --h1:19.20px;
+    --h2:23.04px;
+    --h3:27.65px;
+    --h4:33.18px;
+    --h5:39.81px;
+    --h6:47.78px;
+    --p:16px;
+    --sm:13.33px;
+    --xsm:11.11px;
+
+    --serif:"Judson","serif";
+
+
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color_1); /* agregar el color*/
+    font-family: "","";  /*agregar tipografia*/
+}
+/* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
+
+
+
+/* INICIO DE FOOTER */
+footer{
+
+}
