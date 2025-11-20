@@ -1,10 +1,22 @@
 /*VARIABLES*/
 :root{
-    --color_1:#090085; /* cambiar colores*/
-    --color_2:#7EA5FF;
-    --color_3:#E5FA6E;
-    --color_4:#FFFFEF;
+
+    /*Paleta de colores*/ 
+    --color_1:#452829; /* cambiar colores*/
+    --color_2:#57595B;
+    --color_3:#F3E8DF;
+    --color_4:#E8D1C5;
     --color_5:#EBEDEC;
+
+    /*Paleta de colores neo andinos*/ 
+
+    --color-neo_1:#1D1816; 
+    --color-neo_2:#4C4EB5;
+    --color-neo_3:#F403B8;
+    --color-neo_4:#B1FD03;
+    --color-neo_5:#FF8651;
+    --color-neo_6:#F6F6F6;
+    
 
     --padding-1:px;
     --padding-2:px; 
