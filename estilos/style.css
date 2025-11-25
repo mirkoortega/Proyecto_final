@@ -1,3 +1,9 @@
+/*Importacion de la tipografia*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap');
+
+
+
 /*VARIABLES*/
 :root{
 
@@ -6,7 +12,7 @@
     --color_2:#57595B;
     --color_3:#F3E8DF;
     --color_4:#E8D1C5;
-    --color_5:#EBEDEC;
+    --color_5:#960018;
 
     /*Paleta de colores neo andinos*/ 
 
@@ -28,20 +34,112 @@
 
     /*Escala tipografica*/
 
-    --h1:19.20px;
-    --h2:23.04px;
-    --h3:27.65px;
-    --h4:33.18px;
-    --h5:39.81px;
-    --h6:47.78px;
+    --h6:19.20px;
+    --h5:23.04px;
+    --h4:27.65px;
+    --h3:33.18px;
+    --h2:39.81px;
+    --h1:47.78px;
     --p:16px;
     --sm:13.33px;
     --xsm:11.11px;
 
-    --serif:"Judson","serif";
+    --serif:"IBM Plex Mono","serif";
 
 
 }
+
+/*VARIANTES TIPOGRAFICAS*/
+
+/*Aun hay que modificar*/
+
+.ibm-plex-mono-thin { 
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.ibm-plex-mono-extralight {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.ibm-plex-mono-light {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.ibm-plex-mono-regular {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.ibm-plex-mono-medium {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ibm-plex-mono-semibold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.ibm-plex-mono-bold {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ibm-plex-mono-thin-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.ibm-plex-mono-extralight-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.ibm-plex-mono-light-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.ibm-plex-mono-regular-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ibm-plex-mono-medium-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.ibm-plex-mono-semibold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.ibm-plex-mono-bold-italic {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
 *{
     margin:0;
     padding: 0;
@@ -50,7 +148,7 @@
 
 body{
     background-color: var(--color_4); /* agregar el color*/
-    font-family: "","";  /*agregar tipografia*/
+    font-family: 'IBM Plex Mono';  /*agregar tipografia*/
 }
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
@@ -62,7 +160,7 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    /*height: 400px;*/
     background-color:var(--color_2);
 }
 .header_row{
@@ -76,22 +174,22 @@ body{
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .boton_menu{
-    background-color: var(--azul);
+    background-color: var(--color_2);
     padding:20px 30px;
     text-decoration: none;
     text-align: center;
-    font-size:var(--h2);
+    font-size:var(--h6);
     transition: 300ms all;
 }
 .boton_menu:hover{
-    background-color: var(--celeste);
-    color: var(--azul);
+    background-color: var(--color-neo_2);
+    color: var(--color-neo_6);
 }
 /* FIN HEADER*/
 
