@@ -204,8 +204,96 @@ img{
 }
 /* FIN HEADER*/
 
-/* INICIO INDEX*/
-/* FIN INDEX*/
+/* INICIO INDEX - TANIA*/
+#hero {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    padding: 16px;
+    background-color: var(--color_3);
+}
+
+
+.titulo-contenedor {
+    position: absolute;
+    top: 10%;                     /* lo pone arriba del svg, ajusta según necesites */
+    left: 50%;                   
+    transform: translateX(-50%);  
+    background-color: var(--color_5);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    z-index: 100;             
+}
+
+.titulo-contenedor h1{
+  color: var(--color-neo_6);
+text-align: center;
+
+/* karatina desk h1 */
+font-family: Karantina;
+font-size: 78.54px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+
+.svg-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.hero-contenido {
+    position: absolute;
+    top: 80%;                     /* Lo coloca debajo del SVG */
+    left: 50%;                    /* Centro horizontal */
+    transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
+    width: 435px;                 /* Ancho fijo segun el svg */
+    height: 168px;                /* Alto fijo segun el svg */
+
+    background-color: var(--color_1);
+    padding: var(--padding_6);
+    border-radius: 0 0 20px 20px;
+    color: var(--color_3);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      /* Centra contenido verticalmente */
+    align-items: center;          /* Centra contenido horizontalmente */
+}
+
+.hero-contenido p{
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: var(--padding_6);
+}
+
+.hero-contenido .btn-hero {
+    background-color: var(--color_5);       
+    color: var(--color_4);               
+    text-align: center;          
+    padding: 10px 20px;          
+    border-radius: 0 15px 15px 15px;
+    text-decoration: none;       
+    font-weight: 700;
+    font-size: var(--h6);       
+    margin: 0 auto;           
+}
+
+
+
+/* FIN INDEX - TANIA*/
 
 /* INICIO  LEYENDAS*/
 /* FIN LEYENDAS*/
