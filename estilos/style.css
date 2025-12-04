@@ -152,7 +152,7 @@ body{
     font-family: 'IBM Plex Mono';  /*agregar tipografia*/
 }
 
-img{
+/*img{
     display: block;
     width: 100%;
     background-color: var(--color-neo_3);
@@ -160,7 +160,7 @@ img{
     min-height: 300px;
     margin-bottom: var(--padding-1);
     
-}
+}*/
 /* SELECTORES PARA CADA ETIQUETA TIPOGRAFICA*/
 
 /* INICIO MODULARIZACION*/
@@ -370,7 +370,7 @@ line-height: normal;
 
 .hero-contenido {
     position: relative;
-                        /* Lo coloca debajo del SVG */
+                        
     left: 50%;                    /* Centro horizontal */
     transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
     width: 450px;                 /* Ancho fijo segun el svg */
@@ -761,29 +761,48 @@ h1 ,h2{
   font-family: 'Karantina';
 }
 
-h1{
+/*h1{
   font-size: var(--h1);
-}
+}*/
 
 
 #perfil{
   position: flex; 
-    width: 100%;
-    height: auto;
-    padding: 16px;
-    background: var(--color_1);
-    color: var(--color_3);
+  width: 100%;
+  height: auto;
+  /*background: var(--color_1);*/
+  color: var(--color_3);
 }
 
+
+
 #perfil h1{
-  text-align: center;
+
   
 }
 
 #perfil h2{
-  text-align: center;
+  
   color: var(--color_3);
   font-size: var(--h1);
+
+}
+
+#perfil h1, h2, #avatar{
+  padding-bottom: 32px;
+  text-align: center;
+}
+
+.perfil-contenedor{
+  background-color: var(--color_1);
+  width: 435px;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  padding: 16px;
+  padding-bottom: 4%;
+  margin: 24px auto;
 }
 
 #avatar{
@@ -792,23 +811,43 @@ h1{
   height: auto;
   border-radius: 100%;
   margin: 0 auto;
+  background:none;
+  display: block;
 }
 
-.icon{
-  width: 40px;
-  height: auto; 
-  border-radius: 100%;
-  margin: 0 auto;
+.avatar-contenedor{
+  position: relative;
 }
 
-.perfil-contenido{
+.btn-icon {
+    width: 65.903px;
+    height: 65.024px;
+    border-radius: 50%;   /* Circular */
+    background: #A46C49;
+    z-index: 100;
+    position: absolute;
+    
+    display: inline-flex;       /* Se comporta igual que inline, pero con flex interno */
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-icon-perfil{
+  transform: translate(70%, -150%); /* (X, Y) */
+}
+
+.btn-icon-descripcion{
+  transform: translate(-30%, -20%); /* (X, Y) */
+}
+
+.perfil-caja-texto{
   text-align: center;
   left: 50%;
   background: var(--color_3);
   position: relative;
   left: 50%;                   
   transform: translateX(-50%);  /* Ajusta para centrar perfectamente */
-  width: 450px;
+
   display: flex;
   padding: var(--padding_6);
   justify-content: center;
@@ -821,21 +860,91 @@ h1{
 .titulo-coleccion{
   background: var(--color_5);
   color: var(--color_3);
-  position: relative;
-  top: 10%;                     /* lo pone arriba del svg, ajusta según necesites */
+  position: relative;                    
   left: 50%;                   
   transform: translateX(-50%);  
   padding: 10px;
   border-radius: 0 0 20px 20px;
   display: inline-flex;
-  margin-top: 2%;
+  
 }
 
 .card-fila{
   display: flex;
   justify-content: space-between; /* Separa los elementos uniformemente */
+  margin-top: var(--padding_6);
+}
+
+.coleccion{
   padding: 26px 70px;
 }
+
+/*PARA EL SLIDER DE LAS CARDS*/
+
+/* Controles del slider */
+
+/* ----- SPLIDE ----- */
+#slider-coleccion .splide__track {
+    padding: 20px 0;
+}
+
+#slider-coleccion .splide__slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----- FLECHAS DE SPLIDE ----- */
+.splide__arrow {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    transition: .3s;
+}
+
+.splide__arrow:hover {
+    background: rgba(255, 217, 90, 0.6);
+    color: #000;
+}
+
+/* ----- PAGINACIÓN ----- */
+.splide__pagination__page {
+    background: rgba(255,255,255,0.4);
+}
+
+.splide__pagination__page.is-active {
+    background: #ffd75a;
+    transform: scale(1.3);
+}
+
+
+
+
+/*DISPOSITIVOS MÓVILES GRANDES */
+@media (min-width:320px){
+    .coleccion{
+}
+}
+/* TABLETS */
+@media (min-width:768px){
+    .contenedor{
+    }
+}
+/* LAPTOPS Y DESKTOP PEQUEÑAS */
+@media (min-width:1024px){
+  header .menu_nav{
+    display:block;      /* muestro las pastillas */
+  }
+
+  .bubyu{
+    display:none;       /* oculto el botón hamburguesa */
+  }
+}
+/* DESKTOPS Y TVS GRANDES */
+@media (min-width:1280px){
+    .contenedor{
+    }
+}
+
 
 /* FIN MI COLECCION - TANIA*/
 
